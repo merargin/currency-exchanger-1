@@ -1,0 +1,14 @@
+.header {
+	background-color: #2668ED;
+	padding: 10px 0 10px 0;
+
+	&__right {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+}
+
+.notification {
+	margin-bottom: 0;
+}

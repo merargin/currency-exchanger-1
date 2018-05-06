@@ -1,0 +1,119 @@
+.exchange-panel {
+	color: #FFFFFF;
+
+	&--from {
+		background-color: #2668ED;
+	}
+	&--to {
+		background-color: #2153AF;
+	}
+
+	&-left {
+		padding: 50px 30px;
+
+		&__currency {
+			.center-down-arrow{
+				position: absolute;
+    			width: 0;
+    			height: 0;
+    			border-left: 20px solid transparent;
+    			border-right: 20px solid transparent;
+    			border-top: 20px solid #2668ED;
+    			bottom: -20px;
+    			right: -10px;
+			}
+			.Select {
+				max-width: 100px;
+				&.is-open{
+					.Select-control{
+						.Select-value-label{
+							color: white !important;
+						}
+					}
+				}
+				&-control{
+					background: #2668ED;
+					border: 1px solid white;
+					.Select-value-label{
+						color: white !important;
+					}
+				}
+			}
+		}
+	}
+
+	&-right {
+		padding: 50px 30px;
+	}
+	.Select{
+		&.is-focused{
+			.Select-control{
+				background: #2668ED;
+		}
+		}
+		.Select-control{
+			background: #2668ED;
+		}
+		.Select-input{
+			background: #2668ED;	
+		}
+		&.is-open{
+			.Select-arrow-zone{
+				.Select-arrow{
+					border-top-color: transparent;
+					border-left-color: transparent;
+					border-right-color: transparent;
+					border-bottom-color: white;
+				}
+			}
+		}
+		.Select-arrow-zone{
+			.Select-arrow{
+				border-top-color: white;
+				border-left-color: transparent;
+				border-right-color: transparent;
+				border-bottom-color: transparent;
+			}
+		}
+		.Select-menu-outer{
+			.Select-menu{
+				.Select-option{
+					background: #2668ED;
+					color: white;
+					&:hover{
+						background: white;
+						color: #2668ED;
+					}
+				}
+			}
+		}
+	} 
+	&.exchange-panel--to{
+		.Select{
+			&.is-focused{
+				.Select-control{
+					background: #2153AF;
+				}
+			}
+		}
+		.Select-control{
+			background: #2153AF;
+		}
+		.Select-input{
+			background: #2153AF;	
+		}
+		.Select-menu-outer{
+			.Select-menu{
+				.Select-option{
+					background: #2153AF;
+					&:hover{
+						color: #2153AF;
+					}
+				}
+			}
+		}	
+	}
+	&-left__balance, &-right__balance{
+		color: #dcc6c6;
+	}
+}

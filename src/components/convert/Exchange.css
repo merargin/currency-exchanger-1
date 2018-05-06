@@ -1,0 +1,15 @@
+.exchange {
+	position: relative;
+
+	&-rate {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		padding: 1px 5px;
+    	background-color: #2153AF;
+    	border-radius: 5px;
+    	top: -10%;
+    	left: 50%;
+    	color: white;
+    	border: 1px solid #cca5a5;
+	}
+}

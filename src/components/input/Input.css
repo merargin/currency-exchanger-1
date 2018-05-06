@@ -1,0 +1,23 @@
+.input {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+
+	&__input {
+		background: none;
+		border: none;
+		outline: none;
+		font-size: 35px;
+		text-align: right;
+		display: block;
+
+		&::after {
+			clear: both;
+		}
+
+		&::placeholder {
+			color: #FFFFFF;
+			opacity: 0.8;
+		}
+	}
+}
